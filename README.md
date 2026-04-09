@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AI-Autonomous-Navigation-System
 AI-based autonomous navigation system using A* path planning with simulation and visualization
 =======
@@ -183,4 +183,4 @@ If you found this project useful:
 * 📢 Share it
 
 ---
->>>>>>> 6fd2755 (Initial commit: AI Autonomous Navigation System)
+
