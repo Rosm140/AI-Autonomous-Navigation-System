@@ -1,10 +1,15 @@
+from tracemalloc import start
+
 import numpy as np
 
 from grid import GridEnvironment
 from obstacles import generate_obstacles
 from astar import AStar
+import planner
 from visualization import Visualizer
 from saver import OutputSaver
+from planner import PathPlanner
+import time
 
 
 def run_simulation(rows=20, cols=20, density=0.25):
@@ -39,6 +44,21 @@ def run_simulation(rows=20, cols=20, density=0.25):
     print("✅ Obstacles Added")
 
     # Step 3: Run A* Path Planning
+    planner = PathPlanner(env.grid)
+
+    # 🔹 A*
+    start_time = time.time()
+    path_astar = planner.astar(start, goal)
+    astar_time = time.time() - start_time
+
+    # 🔹 Dijkstra
+    start_time = time.time()
+    path_dijkstra = planner.dijkstra(start, goal)
+    dijkstra_time = time.time() - start_time
+
+    print("\n📊 Performance Comparison:")
+    print(f"A* Time: {astar_time:.6f}s")
+    print(f"Dijkstra Time: {dijkstra_time:.6f}s")
     print("🔄 Running A* Path Planning...")
 
     astar = AStar(env.grid, start, goal)
