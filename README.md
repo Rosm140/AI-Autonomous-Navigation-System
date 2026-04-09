@@ -111,9 +111,19 @@ python src/main.py
 ✅ Output Saving (Images, Frames, Logs)
 ✅ Basic Computer Vision (OpenCV)
 
+## 🎮 Controls
+
+- SPACE → Start / Pause
+- A → A* Algorithm
+- D → Dijkstra Algorithm
+- R → Reset Simulation
+- ESC → Exit
+
 ---
 
 ## 📸 Screenshots
+
+
 
 ### 🔹 Grid with Obstacles (The Yellow Robot is finding the path)
 

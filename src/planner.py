@@ -29,14 +29,17 @@ class PathPlanner:
         open_list = []
         heapq.heappush(open_list, (0, start))
 
+        
         came_from = {}
         g_cost = {start: 0}
 
+        visited = []
+
         while open_list:
             current = heapq.heappop(open_list)[1]
-
+            visited.append(current)
             if current == goal:
-                return self.reconstruct_path(came_from, current)
+                return self.reconstruct_path(came_from, current), visited
 
             for neighbor in self.get_neighbors(current):
                 new_cost = g_cost[current] + 1
@@ -58,11 +61,14 @@ class PathPlanner:
         came_from = {}
         cost = {start: 0}
 
+        visited = []
+
         while open_list:
-            current_cost, current = heapq.heappop(open_list)
+            current = heapq.heappop(open_list)[1]
+            visited.append(current)
 
             if current == goal:
-                return self.reconstruct_path(came_from, current)
+                return self.reconstruct_path(came_from, current), visited
 
             for neighbor in self.get_neighbors(current):
                 new_cost = cost[current] + 1
