@@ -39,6 +39,14 @@ class Visualizer:
         plt.legend(loc='upper right')
         plt.grid(True)
 
+        # Replace imshow with custom coloring
+        display_grid = self.grid.copy()
+
+        # Dynamic obstacles → mark differently
+        display_grid[display_grid == 2] = 0.5  # gray
+
+        plt.imshow(display_grid, cmap='gray_r')
+
     def simulate_movement(self, delay=0.3):
         """Simulate robot moving step-by-step"""
         if not self.path:

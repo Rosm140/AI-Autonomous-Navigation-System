@@ -15,7 +15,7 @@ class PathPlanner:
             c = node[1] + d[1]
 
             if 0 <= r < self.rows and 0 <= c < self.cols:
-                if self.grid[r][c] == 0:
+               if self.grid[r][c] != 1 and self.grid[r][c] != 2:  # 1 = static obstacle, 2 = dynamic obstacle
                     neighbors.append((r, c))
 
         return neighbors
