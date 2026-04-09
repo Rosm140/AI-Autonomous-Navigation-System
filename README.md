@@ -115,7 +115,7 @@ python src/main.py
 
 ## 📸 Screenshots
 
-### 🔹 Grid with Obstacles
+### 🔹 Grid with Obstacles (The Yellow Robot is finding the path)
 
 ![Grid](outputs/frames/frame_5.png)
 
