@@ -139,7 +139,7 @@ python src/main.py
 ---
 
 ### ⚡ Performance Comparison
-![Performance](outputs/analytics/perfomance.png)
+![Performance](outputs/analytics/performance.png)
 
 
 ### 🔹 Path Planning
