@@ -123,11 +123,26 @@ python src/main.py
 
 ## 📸 Screenshots
 
+## 📊 Analytics & Visualization
 
+### 🔍 Exploration Comparison (A* vs Dijkstra)
+![Exploration Comparison](outputs/analytics/exploration_comparison.png)
 
-### 🔹 Grid with Obstacles (The Yellow Robot is finding the path)
+---
 
-![Grid](outputs/frames/frame_5.png)
+### 🔥 Exploration Heatmap
+![Heatmap](outputs/analytics/heatmap.png)
+
+---
+
+### 📍 Path Comparison
+![Path Comparison](outputs/analytics/path_comparison.png)
+
+---
+
+### ⚡ Performance Comparison
+![Performance](outputs/analytics/perfomance.png)
+
 
 ### 🔹 Path Planning
 
