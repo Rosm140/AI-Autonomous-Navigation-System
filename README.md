@@ -119,6 +119,30 @@ python src/main.py
 
 ---
 
+## 🧪 Sample Output
+
+```
+🔄 Initializing Environment...
+✅ Grid Created
+✅ Obstacles Added
+
+📊 Performance Comparison:
+A* Time: 0.001002s
+Dijkstra Time: 0.002006s
+
+✅ Path Found!
+📝 Saved log file: outputs/logs/path_log.txt
+📸 Saved final path image: outputs/images/final_path.png
+📍 Path Length: 39
+
+🚀 Starting Simulation...
+⚡ A* Selected
+▶ Running
+✅ Goal Reached!
+🔄 Reset Triggered
+
+```
+
 ## 📸 Screenshots
 
 ## 📊 Analytics & Visualization
@@ -157,16 +181,6 @@ python src/main.py
 * 📸 `outputs/images/final_path.png`
 * 🎬 `outputs/frames/`
 * 📄 `outputs/logs/path_log.txt`
-
----
-
-## 🧪 Sample Output
-
-```
-Path Found!
-Path Length: 42
-Simulation Started...
-```
 
 ---
 
